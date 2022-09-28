@@ -1,0 +1,428 @@
+<?php
+include("auth_session.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Solid waste management site</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/logo.jpg" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/final_project.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.jpg" alt="" class="img-fluid image-circle rounded responsive"></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Partners</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><span id="time" style="margin-left:10px ;"></span></li>
+          <li><a class="getstarted scrollto" href="logout.php">Logout</a></li>
+          <li><div class="nav-link scrollto my-5 mx-3 alert alert-success">
+        <p>Welcome, <?php echo $_SESSION['username']; ?>!</p></div></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+        <h1>Welcome to our site <span class="text-success"><?php echo $_SESSION['username']; ?></span> </h1>
+          <h2>We are the perfect solution to Solid waste management</h2>
+          <h3 class="text-light">For more infomation about Model fomulation, Feel free to contact us</h3>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#services" class="btn-get-started scrollto">Services</a>
+            <a href="https://youtu.be/MC7a-FkHQMA" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-down" data-aos-delay="200">
+          <img src="assets/img/waste3.png" height="200px" width="700px" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-aos="fade-right" data-aos-delay="70">About</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-12 " data-aos="fade-left" data-aos-delay="100">
+            <p>
+              This project was informed by the challenges most organizations in Kenya and all over the world face in attemp to curb solid waste management manase.
+              Due to increased level of garbage, congestion of garbage in Nairobi County as observed in the
+streets of Nairobi County, has proved itself a threat to human health especially emerging
+diseases due to poor sanitary. Optimization of garbage collection based on operations research
+techniques has not yet been used in the county of Nairobi. In this project we shall discuss a
+detailed mathematical model that ensures efficient garbage collection system.
+
+            </p>
+
+      </div>
+    </section>
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" >
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1" data-aos="fade-left">
+
+            <div class="content">
+              <h3>Why choose to <strong>Optimize the number of trucks</strong></h3>
+              <p class="text-light">
+                Life has become competitive and every organization strives to find better solutions to its solid was management system, by choosing us, your organization will benefit in the following ways;
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>1</span> Minimize resources put in waste management <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      These will help to reduce resource wastage which might be incurred as a result of poor solid management plan.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>2</span> Easily track the movements of trucks <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      We will help your organization determine the optimum number of trucks required to be in use at any given time. This will minimise unnecessary movement of trucks and labour personnel, rather, they can be utilized in other areas of necessity hence increasing production of an organization.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>3</span> Predict the future <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                     We will provide with you a solution where you can predict the future of garbage management system at your place. This is majorly affected by the increased population, in which by projecting the population expected in future, number of trucks required can be easily prediced through our site.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/waste5.png" class="img-fluid responsive" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/waste1.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3 class="text-center">Characteristics of solid wastes</h3>
+            <p class="fst-italic">
+From UNEP/NEMA’s (2003) determination found
+that Nairobi as one of the major cities in Africa, it has two main sources of solid wastes, that is organic waste (those generated from
+house hold) and inorganic waste (those produced from industries and roads). Organic waste
+contribute about 68% while inorganic waste 32%. Nairobi County solid waste management system
+is controlled by two major bodies. NEMA, City council of Nairobi and the private sector under the
+organization termed as Kenya private sector alliance (KPSA) which involves in collection and
+recycling of solid wastes. Nairobi solid wastes can be classified as follows;
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">Organic waste <i class="val">68%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Inorganic wastes <i class="val">32%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>The project sort to provide a solution by providing diverse services to its users basically based on two circumstances</p>
+        </div>
+        <div class="row ">
+          <div class="col-xl-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="80">
+            <div class="icon-box">
+              <div class="icon text-center"><img src="assets/img/logo.jpg" height="70px" width="70px" class="img-fluid animated" alt=""></div>
+              <h4 class="text-center"><a href="optimum-number-of-trucks.html">Determination of fixed number of trucks</a></h4>
+              <p>This service aims at determining optimum number of trucks without time variation.
+            This applies in an area which is not heavily affected by traffic jam</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon text-center"><div class="icon"><img src="assets/img/logo.jpg" height="70px" width="70px" class="img-fluid animated" alt=""></div></i></div>
+              <h4 class="text-center"><a href="trucks-with-time-variation.html">Determination of number of trucks with time variation</a></h4>
+              <p>This applies in those areas where heavy traffic jam is experienced. Instead of having garbage vehicles staying long on the road wasting fuel, you can reschedule time of convinience where there is no heavy traffic for exmple, by collecting garbage in 6hrs a day, we can determine the number of trucks required to get work done</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="text-center">Abstract</h3>
+            <p> Garbage remains a major problem facing urban centers in developing countries. Increasing
+              population levels, rapid economic growth and rise in community living standard increases rate of
+              garbage disposal in Kenyan cities especially in Nairobi. Waste handling practices by residents and
+              measure put in place for safe garbage collection and disposal are the major factors influencing
+              sanitary of any area in any urban center in Kenya. Many ways of collecting garbage waste have
+              been applied to curb this menace but the solution is yet to be realized as garbage congestion is still
+              significant as seen in the streets of Nairobi County. There is need to adopt control measures based
+              on operation. In this project I intented to formulate a mathematical model which entails
+              determining the collection and removal functions that are solved analytically and simulated using
+              MATLAB. The model was to determine optimum number of trucks required to minimize garbage
+              congestion in Nairobi County and any other place across the world.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="find-out-more.html">Explore more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contributors to this project</h2>
+          <p>This project was effected from the project I undertook while at the university. In the project titled <strong>Mathematical model to determine optimum number of trucks to curb garbage collection menase</strong> was inteded to optimize the number of trucks used during garbage collection process based on population of any residential area.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="70">
+              <div class="pic"><img src="assets/img/godwin.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Godwin Waswa</h4>
+                <span>Chief Executive Officer</span>
+                <p>A graduate from The Technical university Of Kenya with a bachelors degree in Mathematics</p>
+                <div class="social">
+                  <a href="https://twitter.com/waswa_godwin"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/godwin.goddy.750/"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/waswagodwin/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/godwin-waswa-170307123/"> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://github.com/Godwin-Waswa"> <i class="ri-github-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/plp.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Power learn project</h4>
+                <span>Learning Platform</span>
+                <p>Through Power Learn Project, I was able to aquire web development skills which has mae it easy for me to implement my project.</p>
+                <div class="social">
+                  <a href="https://twitter.com/PLPAfrica"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/Powerlearnproject/"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/plpafrica/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/company/power-learn-project/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Kindly feel free to share your views by sending us a message or call for instant assistance.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-delay="300">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Kimilili-Bungoma road, Bokoli</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>waswagodwin19@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+254792777948</p>
+                <p>or</p>
+                <p>+254706858533</p>
+              </div>
+              <iframe src="https://maps.google.com/maps?q=bokoli%20kenya&t=&z=11&ie=UTF8&iwloc=&output=embed">Bokoli</iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="500">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Type your full names</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>Godwin Waswa</h3>
+            <p>
+              KIMILILI-BUNGOMA ROAD <br>
+              P.O BOX, 330-50200<br>
+              BOKOLI
+              KENYA <br><br>
+              <strong>Phone:</strong> +254792777948<br>
+              <strong>Email:</strong> waswagodwin19@gmail.com<br>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Consultation services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Solid waste management system web development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Waste Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="optimum-number-of-trucks">Optimization of trucks at your organization</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>My Social Networks</h4>
+            <p>Kindly reach me Through the social media networks any time for more discussion</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/waswa_godwin"><i class="ri-twitter-fill"></i></a>
+              <a href="https://www.facebook.com/godwin.goddy.750/"><i class="ri-facebook-fill"></i></a>
+              <a href="https://www.instagram.com/waswagodwin/"><i class="ri-instagram-fill"></i></a>
+              <a href="https://www.linkedin.com/in/godwin-waswa-170307123/"> <i class="ri-linkedin-box-fill"></i> </a>
+              <a href="https://github.com/Godwin-Waswa"> <i class="ri-github-fill"></i> </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Godwin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Project by <a href="https://github.com/Godwin-Waswa">Godwin Wafula Waswa</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+    <script>
+  var time = {};
+  
+  (function () {
+    var clock = document.getElementById('time');
+    
+    (function tick () {
+      var minutes, d = new Date();
+      time.weekday = d.getDay();
+      time.day = d.getDate();
+      time.month = d.getMonth() + 1; 
+      time.year = d.getFullYear();
+      time.minutes = d.getMinutes();
+      time.hours = d.getHours() ; 
+      time.seconds = d.getSeconds();
+      time.ms = d.getMilliseconds();
+      
+      minutes = (time.minutes < 10 ? '0' + time.minutes : time.minutes);
+      
+      clock.innerHTML = time.month + '/' + time.day + '/' + time.year + ' '+ ' '+ time.hours + ':' + minutes + ':' + time.seconds ;
+      
+      window.setTimeout(tick, 1000);
+    }());
+  }()); 
+  
+  console.log(time.ms);
+      </script>
+</html>

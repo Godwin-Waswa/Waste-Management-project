@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Optimum number of trucks with time variation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/logo.jpg" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/final_project.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="fixed-top text-dark ">
+    <div class="container d-flex align-items-center text-dark">
+
+        <a href="index.php" class="logo me-auto"><img src="assets/img/logo.jpg" alt="" class="img-fluid image-circle rounded responsive"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="home.php">Home</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
+          <li><span id="time" style="margin-left:20px ;font-weight: bold;"></span></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <section  class="services section-bg" style="margin-top: 72px;">
+    <div class="container" data-aos="zoom-in" data-aos-delay="20">
+      <div class="section-title">
+        <h2>Truck Optimization</h2>
+        <p><b>Determination of the optimum number of trucks with time variation</b></p>
+      </div>
+      <hr>
+        <div class="row b-5"data-aos="fade-right" data-aos-delay="70">
+            <div class="col-sm-5 mt-5 ">
+              <div class="bg-light"><h3 class="text-center ">Enter values as required</h3></div>
+              <label style="font-family:cambria;font-weight:bold;font-size: large;line-height: 50px;">Population of your residential area</label>
+              <input type="number" class="form-control" placeholder="Enter population of your residential area" id="population"><br>
+              <label style="font-family:cambria;font-weight:bold;font-size: large;line-height: 50px;">Daily garbage collection</label>
+              <input type="number" class="form-control" placeholder="Average daily garbage collected(kg)" id="garbage"><br>
+              <label style="font-family:cambria;font-weight:bold;font-size: large;line-height: 50px;">Amount of garbage a garbage-hold can hold</label>
+              <input type="number" class="form-control" placeholder="Amount of garbage an garbage-hold can hold(kg)" id="garbage-hold"><br>
+              <label style="font-family:cambria;font-weight:bold;font-size: large;line-height: 50px;">Amount of garbage in Kg a truck can carry at a time</label>
+              <input type="number" class="form-control" placeholder="Max amount of garbage in kg a truck can carry at a time" id="garbage-truck"><br>
+              <label style="font-family:cambria;font-weight:bold;font-size: large;line-height: 50px;">Time in hours for garbage collection</label>
+              <input type="number" class="form-control" placeholder="Enter ime in hours that you wish to collect garbage" id="time1"><br>
+            <button type="submit" class="btn btn-primary" id="btn" >caculate</button>
+            </div>
+            <div class="col-sm-7 mt-5 bg-dark" style="text-transform: capitalize; font-size: larger;" data-aos="fade-left" data-aos-delay="100">
+              <h3 class="text-center text-light my-3">Results</h3>
+          <p style="color: yellow;" type="number" id="para1"></p>
+          <p style="color: orangered;" type="number" id="para2"></p>
+          <p style="color: rgb(0, 255, 42);" type="number" id="para3"></p>
+          <p style="color: rgb(235, 23, 189);" type="number" id="para4"></p>
+          <p style="color: rgb(211, 168, 202);" type="number" id="para5"></p>
+          <p style="color: rgb(231, 105, 204);" type="number" id="para6"></p>
+        </div>
+          </div>
+        <a class="cta-btn align-middle btn btn-success" style="margin-top:20px ;" href="home.php">Go back home</a>
+    </div>
+</section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>Godwin Waswa</h3>
+            <p>
+              KIMILILI-BUNGOMA ROAD <br>
+              P.O BOX, 330-50200<br>
+              BOKOLI,<br>
+              KENYA <br><br>
+              <strong>Phone:</strong> +254792777948<br>
+              <strong>Email:</strong> waswagodwin19@gmail.com<br>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Consultation services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Solid waste management system web development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Waste Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Optimization of your your organization</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>My Social Networks</h4>
+            <p>Kindly reach me Through the social media networks any time for more discussion</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/waswa_godwin"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/godwin.goddy.750/"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/waswagodwin/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/godwin-waswa-170307123/"> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://github.com/Godwin-Waswa"> <i class="ri-github-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Godwin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Project by <a href="https://github.com/Godwin-Waswa">Godwin Wafula Waswa</a>
+      </div>
+    </div>
+  </footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    let home = document.getElementById("home-btn");
+        home.addEventListener('click',function main_page(){
+      document.getElementById("home-btn").style.display = block;
+      document.getElementById("introduction-btn").style.display = none;
+      document.getElementById("statement-btn").style.display = none;
+    })
+    </script>
+    <script>
+      let btn = document.getElementById('btn');
+                btn.addEventListener('click',function(){
+                  let n0 = document.getElementById('population').value;
+                  let k2 = document.getElementById('garbage').value;
+                  let g1 = document.getElementById('garbage-hold').value;
+                  let g2 = document.getElementById('garbage-truck').value;
+                  let t0 = document.getElementById('time1').value;
+                  var t1 = t0/24;
+                  let k1 = k2/n0;
+                  let t2 = 0.167;
+                  var a = n0/4;
+                  var x = (4*a*k1)/g1;
+                  var k3 = (k2/(n0*k1));
+                  var m = ((2.1479*(t1**2))-(6.4437*t1) + 15.205);
+                  document.getElementById('para2').innerHTML = "Average daily disposal by each individual is : " + k1 + "kg";
+                  document.getElementById('para3').innerHTML = "The ratio of total garbage collected in a period of 24hours to that of maximum amount of garbage the garbage hold can hold is : " +"" + x;
+                  if(m < 1){
+                    m = 1;
+                    document.getElementById('para1').innerHTML = "For constant number of trucks required at your premise with no time variation is : " + m;
+                  }else{
+                  document.getElementById('para1').innerHTML = "Number of trucks required at your premise when collected in" + "" + " " + t0 + "hrs is" + " " + m;}
+                  if(x > 1){
+                    document.getElementById('para5').innerHTML = "RECOMMENDATION(S)";
+                    document.getElementById('para6').innerHTML = "Kindly increase the size of your garbage-hold";
+                }
+                }
+                )
+    </script>
+      <script>
+    var time = {};
+    (function () {
+      var clock = document.getElementById('time');
+      (function tick () {
+        var minutes, d = new Date();
+        time.weekday = d.getDay();
+        time.day = d.getDate();
+        time.month = d.getMonth() + 1; 
+        time.year = d.getFullYear();
+        time.minutes = d.getMinutes();
+        time.hours = d.getHours() ; 
+        time.seconds = d.getSeconds();
+        time.ms = d.getMilliseconds();
+        
+        minutes = (time.minutes < 10 ? '0' + time.minutes : time.minutes);
+        
+        clock.innerHTML = time.month + '/' + time.day + '/' + time.year + ' '+ ' '+ time.hours + ':' + minutes + ':' + time.seconds ;
+        
+        window.setTimeout(tick, 1000);
+      }());
+    }()); 
+    
+    console.log(time.ms);
+        </script>
+
+</body>
+</html>
