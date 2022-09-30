@@ -25,16 +25,20 @@ include("auth_session.php");
     <div class="container d-flex align-items-center">
       <a href="index.html" class="logo me-auto"><img src="assets/img/logo.jpg" alt="" class="img-fluid image-circle rounded responsive"></a>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#team">Partners</a></li>
+     <ul>
+          <li data-toggle="tooltip" data-placement="top" title="home"><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li data-toggle="tooltip" data-placement="top" title="about"><a class="nav-link scrollto" href="#about">About</a></li>
+          <li data-toggle="tooltip" data-placement="top" title="services"><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li data-toggle="tooltip" data-placement="top" title="Partners"><a class="nav-link scrollto" href="#team">Partners</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><span id="time" style="margin-left:10px ;"></span></li>
           <li><a class="getstarted scrollto" href="logout.php">Logout</a></li>
           <li><div class="nav-link scrollto my-5 mx-3 alert alert-success">
-        <p>Welcome, <?php echo $_SESSION['username']; ?>!</p></div></li>
+          <p>Welcome, <?php echo $_SESSION['username']; ?>!</p></div></li>
+          <li><button data-toggle="tooltip" data-placement="top" title="<?php echo $_SESSION['username']; ?>"><?php 
+          $symbol = $_SESSION['username'];
+          $rest = substr($symbol,0,1);
+          echo $rest; ?></button></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
