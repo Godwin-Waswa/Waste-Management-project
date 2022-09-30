@@ -23,7 +23,7 @@ include("auth_session.php");
 <body>
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.jpg" alt="" class="img-fluid image-circle rounded responsive"></a>
+      <a href="index.php" class="logo me-auto"><img src="assets/img/logo.jpg" alt="" class="img-fluid image-circle rounded responsive"></a>
       <nav id="navbar" class="navbar">
      <ul>
           <li data-toggle="tooltip" data-placement="top" title="home"><a class="nav-link scrollto active" href="#hero">Home</a></li>
