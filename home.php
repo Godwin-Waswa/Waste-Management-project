@@ -35,10 +35,11 @@ include("auth_session.php");
           <li><a class="getstarted scrollto" href="logout.php">Logout</a></li>
           <li><div class="nav-link scrollto my-5 mx-3 alert alert-success">
           <p>Welcome, <?php echo $_SESSION['username']; ?>!</p></div></li>
-          <li><button data-toggle="tooltip" data-placement="top" title="<?php echo $_SESSION['username']; ?>"><?php 
+          <li><button data-toggle="tooltip" class= "text-large " style="border-radius:50%;color:red;background:black;text-transform:uppercase;font-size:x-large;font-weight:bolder" data-placement="top" title="<?php echo $_SESSION['username']; ?>"><?php 
           $symbol = $_SESSION['username'];
           $rest = substr($symbol,0,1);
-          echo $rest; ?></button></li>
+          echo $rest; ?>
+          </button></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -63,27 +64,22 @@ include("auth_session.php");
         </div>
       </div>
     </div>
-
   </section>
-
   <main id="main">
-
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2 data-aos="fade-right" data-aos-delay="70">About</h2>
         </div>
-
         <div class="row content">
           <div class="col-lg-12 " data-aos="fade-left" data-aos-delay="100">
             <p>
               This project was informed by the challenges most organizations in Kenya and all over the world face in attemp to curb solid waste management manase.
               Due to increased level of garbage, congestion of garbage in Nairobi County as observed in the
-streets of Nairobi County, has proved itself a threat to human health especially emerging
-diseases due to poor sanitary. Optimization of garbage collection based on operations research
-techniques has not yet been used in the county of Nairobi. In this project we shall discuss a
-detailed mathematical model that ensures efficient garbage collection system.
+              streets of Nairobi County, has proved itself a threat to human health especially emerging
+              diseases due to poor sanitary. Optimization of garbage collection based on operations research
+              echniques has not yet been used in the county of Nairobi. In this project we shall discuss a
+              detailed mathematical model that ensures efficient garbage collection system.
 
             </p>
 
@@ -154,13 +150,13 @@ detailed mathematical model that ensures efficient garbage collection system.
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3 class="text-center">Characteristics of solid wastes</h3>
             <p class="fst-italic">
-From UNEP/NEMA’s (2003) determination found
-that Nairobi as one of the major cities in Africa, it has two main sources of solid wastes, that is organic waste (those generated from
-house hold) and inorganic waste (those produced from industries and roads). Organic waste
-contribute about 68% while inorganic waste 32%. Nairobi County solid waste management system
-is controlled by two major bodies. NEMA, City council of Nairobi and the private sector under the
-organization termed as Kenya private sector alliance (KPSA) which involves in collection and
-recycling of solid wastes. Nairobi solid wastes can be classified as follows;
+               From UNEP/NEMA’s (2003) determination found
+               that Nairobi as one of the major cities in Africa, it has two main sources of solid wastes, that is organic waste (those generated from
+               house hold) and inorganic waste (those produced from industries and roads). Organic waste
+               contribute about 68% while inorganic waste 32%. Nairobi County solid waste management system
+               is controlled by two major bodies. NEMA, City council of Nairobi and the private sector under the
+               organization termed as Kenya private sector alliance (KPSA) which involves in collection and
+               recycling of solid wastes. Nairobi solid wastes can be classified as follows;
             </p>
 
             <div class="skills-content">
