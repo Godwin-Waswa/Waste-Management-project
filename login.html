@@ -31,7 +31,7 @@
         <a href="index.php" class="logo me-auto"><img src="assets/img/logo.jpg" alt="" class="img-fluid image-circle rounded responsive"></a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><span id="time" style="margin-left:20px ;font-weight: bold;font-size:large;"></span></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -60,7 +60,7 @@
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
-            header("Location: dashboard.php");
+            header("Location: dashboard.html");
         } else {
             echo "<div class='form'>
                   <h3 class='alert alert-danger'>Incorrect Username or password!!!.</h3><br/>
