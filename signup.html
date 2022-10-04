@@ -49,6 +49,7 @@
             <hr>
             <?php
     require('db.php');
+    error-reporting(0);
     if (isset($_REQUEST['username'])) {
         $username = stripslashes($_REQUEST['username']);
         $username = mysqli_real_escape_string($con, $username);
@@ -72,12 +73,12 @@
         if ($result) {
             echo "<div class='form'>
                   <h3>You are registered successfully.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a></p>
+                  <p class='link'>Click here to <a href='login.html'>Login</a></p>
                   </div>";
         } else {
             echo "<div class='form'>
                   <h3>Required fields are missing.</h3><br/>
-                  <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
+                  <p class='link'>Click here to <a href='signup.html'>registration</a> again.</p>
                   </div>";
         }
     } else {
@@ -86,7 +87,7 @@
     <div class="row">
               <div class="col-md-12">
                   <div class="form-outline">
-                  <input type="text"id="username" name="username" class="form-control form-control-lg" placeholder="username"/>
+                  <input type="text"id="username" name="username" class="form-control form-control-lg" placeholder="username" autocomplete = "false"/>
                   <label class="form-label" for="username" >Username</label>
                    </div>
                    </div>
@@ -94,7 +95,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="firstName" name="firstname" class="form-control form-control-lg" placeholder="Firstname"/>
+                    <input type="text" id="firstName" name="firstname" class="form-control form-control-lg" placeholder="Firstname" autocomplete = "false"/>
                     <label class="form-label" for="firstName" >First Name</label>
                   </div>
 
@@ -102,7 +103,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="lastName" class="form-control form-control-lg" name="secondname" placeholder="Last Name" />
+                    <input type="text" id="lastName" class="form-control form-control-lg" name="secondname" placeholder="Last Name" autocomplete = "false"/>
                     <label class="form-label" for="lastName" >Last Name</label>
                   </div>
 
@@ -112,7 +113,7 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="email" id="emailAddress" name="email" class="form-control form-control-lg" placeholder="name@example.com" />
+                    <input type="email" id="emailAddress" name="email" class="form-control form-control-lg" placeholder="name@example.com" autocomplete = "false" />
                     <label class="form-label" for="emailAddress">Email</label>
                   </div>
 
@@ -120,7 +121,7 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="tel" id="phoneNumber" name="phone" class="form-control form-control-lg" placeholder="07..." />
+                    <input type="tel" id="phoneNumber" name="phone" class="form-control form-control-lg" placeholder="07..." autocomplete = "false"/>
                     <label class="form-label" for="phoneNumber">Phone Number</label>
                   </div>
 
@@ -130,7 +131,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="password" />
+                    <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="password" autocomplete = "false" />
                     <label class="form-label" for="password" >password</label>
                   </div>
 
