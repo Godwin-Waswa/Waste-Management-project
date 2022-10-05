@@ -67,6 +67,15 @@
           <p style="color: rgb(211, 168, 202);" type="number" id="para5"></p>
           <p style="color: rgb(231, 105, 204);" type="number" id="para6"></p>
         </div>
+            <div class="col-sm-7 mt-5 bg-dark" style="text-transform: capitalize; font-size: larger;" data-aos="fade-left" data-aos-delay="100">
+              <h3 class="text-center text-light my-3">Results</h3>
+          <p style="color: yellow;" type="number" id="para1"></p>
+          <p style="color: orangered;" type="number" id="para2"></p>
+          <p style="color: rgb(0, 255, 42);" type="number" id="para3"></p>
+          <p style="color: rgb(235, 23, 189);" type="number" id="para4"></p>
+          <p style="color: rgb(211, 168, 202);" type="number" id="para5"></p>
+          <p style="color: rgb(231, 105, 204);" type="number" id="para6"></p>
+        </div>
           </div>
         <a class="cta-btn align-middle btn btn-success" style="margin-top:20px ;" href="home.html">Go back home</a>
     </div>
@@ -144,16 +153,16 @@
                   var x = (4*a*k1)/g1;
                   var k3 = (k2/(n0*k1));
                   var m = ((2.1479*(t1**2))-(6.4437*t1) + 15.205);
-                  document.getElementById('para2').innerHTML = "Average daily disposal by each individual is : " k1 + "kg";
-                  document.getElementById('para3').innerHTML = "The ratio of total garbage collected in a period of 24hours to that of maximum amount of garbage the garbage hold can hold is : " x;
+                  document.getElementById('para2').innerHTML = "Average daily disposal by each individual is : " + k1 + "kg";
+                  document.getElementById('para3').innerHTML = "The ratio of total garbage collected in a period of 24hours to that of maximum amount of garbage the garbage hold can hold is : " +"" + x;
                   if(m < 1){
                     m = 1;
-                    document.getElementById('para1').innerHTML = "Constant number of trucks required at your premise with no time variation is : " m;
+                    document.getElementById('para1').innerHTML = "For constant number of trucks required at your premise with no time variation is : " + m;
                   }else{
-                  document.getElementById('para1').innerHTML = "Number of trucks required at your premise when collected in  " t0 +" "+ "hrs is" + " " + m;
+                  document.getElementById('para1').innerHTML = "Number of trucks required at your premise when collected in" + "" + " " + t0 + "hrs is" + " " + m;}
                   if(x > 1){
                     document.getElementById('para5').innerHTML = "RECOMMENDATION(S)";
-                    document.getElementById('para6').innerHTML = "Amount of garbage disposed supurses the amount of garbage a garbage hold can carry. Kindly increase the size of your garbage-hold";
+                    document.getElementById('para6').innerHTML = "Kindly increase the size of your garbage-hold";
                 }
                 }
                 )
