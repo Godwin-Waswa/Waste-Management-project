@@ -26,7 +26,7 @@ if (isset($_POST["send"])){
     echo "
     <script>
     alert('sent successfully');
-    document.location.href = 'index.php';
+    document.location.href = 'index.html';
     </script>
     
     ";
